@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-wrapper {
+        @apply p-8 rounded-lg bg-gradient-to-r from-orange-400 via-pink-500 to-indigo-600/90 shadow-lg backdrop-blur-md border border-white/30 hover:scale-[1.02] transition-transform duration-300;
+    }
+    .card-inner{
+        @apply bg-slate-800 p-6 rounded-lg shadow-lg border border-white/20;
+    }
+    .card-title {
+        @apply text-2xl text-center font-semibold mb-4 text-white;
+    }
+    .card-text{
+        @apply text-center text-gray-100;
+    }
+    .nav-blur {
+        @apply bg-white/10 backdrop-blur-md;
+    }
+    .nav-link {
+        @apply text-white px-4 py-2 rounded-lg hover:bg-white/20 transition-colors duration-200;
+    }
+    .desktop-nav {
+        @apply hidden md:flex justify-center items-center space-x-4 p-4;
+    }
+    .nav-cta {
+        @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-4 py-2 rounded-lg hover:from-pink-500 hover:to-purple-500 transition-colors duration-300;
+    }
+}
